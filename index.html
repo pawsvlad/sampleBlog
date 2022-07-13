@@ -6,29 +6,86 @@
     <title>canineCrush -sampleBlog Damian</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <script type="text/javascript" src='main.js'></script>
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;500;600;700&display=swap" rel="stylesheet">
     <script src="https://use.fontawesome.com/6f2f6a47b7.js"></script>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navBar" id="Topnav">
             <div class="logo">
                 <h1>canine <article>Crush</article></h1>
             </div>
-            <input type="text" class="form-control" placeholder="Search over 5000+ plants">
-          <div class="input-group-append">
-              <button type="submit" class="input-group-text btn">Search</button>
+            <div class="search-box" id="search-responsive">
+              <form action="search.php" method="get">
+                  <input type="text" name="search" maxlength="60" placeholder="Search..." required>
+                  <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
           </div>
-        </input>
-                <div class="navBtn">
-                    <span>seek!</span>
-                    <a href="#"> <i class="fa fa-home"></i>Home</a>
-                    <a href="#"> <i class="fa fa-home"></i>Home</a>
-                    <a href="#"> <i class="fa fa-home"></i>Home</a>
-                    <a href="#"> <i class="fa fa-home"></i>Home</a>  
-                </div>
+          <a href="javascript:void(0);" class="icon" onclick="expansion();search_expand()">
+            <i class="fa fa-bars"></i>
+          </a>
             </nav>
     </header>
-</body>
-</html>
+    <div class="hero">
+      <div class="textBox">
+        <h1>Canine <article class="fancyTextName">crush</article></h1>
+        <h4>Your pet care consultant; get realtime answers to your questions, <br> from certified veterinary doctors, and breeders. <br> <span class="fancyText">anytime anywhere theres internet.</span> </h4>
+       
+      </div>
+      <div class="sidebar">
+        <div class="iconBox">
+          <div class="sideText">
+            <a href="#">Book session</a>
+          </div>
+          <span class="icons">
+            <ion-icon name="today"></ion-icon>
+          </span>
+        </div>
+        <div class="iconBox">
+          <div class="sideText">
+            <a href="#">Book session</a>
+          </div>
+          <span class="icons">
+            <ion-icon name="paw"></ion-icon>
+          </span>
+        </div>
+        <div class="iconBox">
+          <div class="sideText">
+            <a href="#">Book session</a>
+          </div>
+          <span class="icons">
+            <ion-icon name="heart-circle-outline"></ion-icon>
+          </span>
+        </div>
+        <div class="iconBox">
+          <div class="sideText">
+            <a href="#">Book session</a>
+          </div>
+          <span class="icons">
+            <ion-icon name="thumbs-up"></ion-icon>
+          </span>
+        </div>
+        <div class="iconBox">
+          <div class="sideText">
+            <a href="#">Book session</a>
+          </div>
+          <span class="icons">
+            <ion-icon name="thumbs-down"></ion-icon>
+          </span>
+        </div>
+        <div class="iconBox">
+          <div class="sideText">
+            <a href="#">Book session</a>
+          </div>
+          <span class="icons">
+            <ion-icon name="receipt-outline"></ion-icon>
+          </span>
+        </div>
+
+      </div>
+    </div>
+
+    
