@@ -202,19 +202,22 @@ button {
   }
 }
 .containerA{
-  width: 100%; margin: auto; text-align: center; padding-top: 100px;
+  width: 100%; margin: auto;
+  text-align: center; 
+  padding-top: 100px;
   background-color: #e9f3ed;
-  display: flex;
   min-height: 100vh;
   align-items: center;
   color: #13542d;
-  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;  
 }
 .col-1{
   display: flex;
   border: 4px solid #1b65a7;
   flex-basis: 55%;
   margin: auto;
+ 
 }
 .col-1 img{
   object-fit: cover;
@@ -224,6 +227,7 @@ button {
 .col-2{
   flex-basis: 40%;
   margin: auto;
+  
 }
 .col-2 h3{
   color: #1b65a7;
@@ -300,4 +304,13 @@ button {
 }
 .col-1 .slide-up{
   animation-delay: 0.8s;
+}
+@media screen and(max-width: 800px){
+  .col-1, .col-2{
+    flex: 50%;
+    max-width: 50%;
+  }
+  .containerA{
+    flex-direction: column;
+  }
 }
